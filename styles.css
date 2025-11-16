@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 body {
@@ -429,4 +429,81 @@ header {
   line-height: 150%;
   margin: 0 20px 20px 20px;
   text-align: center;
+}
+/* AKHIR SECTION-REVIEW */
+
+/* AWAL SECTION-WHY */
+.featured-third {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-third h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+  line-height: 120%;
+}
+
+.featured-third .content-why {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 778px) {
+  .featured-section .featured-third > div.content-why > img {
+    width: 336px;
+    height: 221px;
+    overflow: hidden;
+  }
+}
+
+.featured-section .featured-third .content-why img {
+  width: 636px;
+  height: 418px;
+  overflow: hidden;
+}
+
+.featured-section .featured-third .content-why .detail-why {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+@media (min-width: 992px) {
+  .featured-section .featured-third .content-why .detail-why {
+    width: 573px;
+  }
+}
+
+.featured-section .featured-third .content-why .detail-why i {
+  vertical-align: middle;
+  
+}
+
+.featured-section .featured-third .content-why .detail-why h4 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.featured-section .featured-third .content-why .detail-why p {
+  font-family: "Lora", serif;
+  margin-top: 16px;
+  margin-left: 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
