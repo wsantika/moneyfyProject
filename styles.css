@@ -1,0 +1,444 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  /* border: 2px solid red; */
+}
+
+body {
+  background-color: #fff9f0;
+}
+
+header {
+  width: 100%;
+  background-color: #fff9f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* AWAL NAVBAR */
+.navbar {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.navbar .nav-logo h1 {
+  font-weight: 700;
+  margin-left: 25px;
+  font-size: 1.8rem;
+}
+
+.navbar .nav-logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar .nav-menu {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px 0 20px;
+}
+
+.navbar .nav-menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .nav-menu ul li {
+  margin: 0 15px;
+}
+
+.navbar .nav-menu ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  transition: all 0.4s;
+}
+
+.navbar .nav-menu ul li a:hover {
+  letter-spacing: 4px;
+}
+
+.navbar .nav-extra {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-extra ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.navbar .nav-extra ul li {
+  margin: 0 10px;
+}
+
+.navbar .nav-extra ul li a {
+  text-decoration: none;
+  color: #000;
+  font: 1rem;
+}
+
+/* Style dasar tombol */
+.navbar .nav-extra .btn {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Lora", serif;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+/* Tombol Outline */
+.navbar .nav-extra .btn-outline {
+  background-color: transparent;
+  border: 2px solid #8fbaff;
+  color: #1a1a1a;
+}
+
+/* Hover efek outline */
+.navbar .nav-extra .btn-outline:hover {
+  background-color: #e8f1ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 115, 255, 0.15);
+}
+
+/* Tombol Filled */
+.navbar .nav-extra .btn-filled {
+  background-color: #d8e6ff;
+  border: 2px solid transparent;
+  color: #1a1a1a;
+}
+
+/* Hover efek filled */
+.navbar .nav-extra .btn-filled:hover {
+  background-color: #bcd4ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 115, 255, 0.25);
+}
+/* AKHIR NAVBAR */
+
+.featured-section {
+  width: 100%;
+  padding: 0;
+}
+
+.featured-section .featured-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 90px;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.featured-section .featured-main .featured-kiri {
+  padding: 0;
+  margin: 0;
+}
+
+.featured-section .featured-main .featured-kiri h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.featured-section .featured-main .featured-kiri h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.featured-section .featured-main .featured-kiri p {
+  max-width: 450px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.featured-section .featured-main .featured-kiri .btn {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Lora", serif;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+/* Tombol Filled */
+.featured-section .featured-main .featured-kiri .btn-main {
+  background-color: #d8e6ff;
+  border: 2px solid transparent;
+  color: #1a1a1a;
+}
+
+/* Hover efek filled */
+.featured-section .featured-main .featured-kiri .btn-main:hover {
+  background-color: #bcd4ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 115, 255, 0.25);
+}
+
+.featured-section .featured-main .featured-kanan {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.featured-section .featured-main .featured-kanan .img-main {
+  width: 600px;
+  border-radius: 25px;
+  position: relative;
+  left: 70px;
+  z-index: 2;
+}
+
+.featured-kanan .img-main,
+.featured-kanan .img-secondary {
+  display: flex;
+  position: static;
+}
+.featured-section .featured-main .featured-kanan .circle-bg {
+  position: absolute;
+  width: 800px;
+  right: -100px;
+  top: -25px;
+  z-index: -1;
+}
+
+.featured-section .featured-main .featured-kanan .img-secondary {
+  width: 400px;
+  border-radius: 25px;
+  position: absolute;
+  left: -60px;
+  top: 100px;
+  z-index: 3;
+}
+
+.navbar-mobile {
+  display: none;
+}
+/* model mobile */
+
+@media screen and (max-width: 960px) {
+  .featured-kanan .img-main,
+  .featured-kanan .img-secondary {
+    display: none;
+  }
+
+  .featured-kanan .circle-bg {
+    /* display: none; */
+    display: flex;
+    position: relative;
+    left: -190px;
+  }
+
+  .navbar {
+    display: none;
+  }
+  .navbar-mobile {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+    /* overflow: hidden; */
+  }
+
+  .navbar-mobile .nav-logo h1 {
+    font-weight: 700;
+    margin-left: 25px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .navbar-mobile .nav-logo a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .navbar-mobile .nav-menu {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 0 20px;
+  }
+
+  .navbar-mobile .nav-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-mobile .nav-menu ul li {
+    margin: 0 15px;
+  }
+
+  .navbar-mobile .nav-menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    transition: all 0.4s;
+  }
+
+  .navbar-mobile .nav-menu ul li a:hover {
+    letter-spacing: 4px;
+  }
+
+  .navbar-mobile .nav-extra {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-mobile .nav-extra ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .navbar-mobile .nav-extra ul li {
+    margin: 0 10px;
+  }
+
+  .navbar-mobile .nav-extra ul li a {
+    text-decoration: none;
+    color: #000;
+    font: 1rem;
+  }
+
+  /* Style dasar tombol */
+  .navbar-mobile .nav-extra .btn {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Lora", serif;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: none;
+  }
+
+  /* Tombol Outline */
+  .navbar-mobile .nav-extra .btn-outline {
+    background-color: transparent;
+    border: 2px solid #8fbaff;
+    color: #1a1a1a;
+  }
+
+  /* Hover efek outline */
+  .navbar-mobile .nav-extra .btn-outline:hover {
+    background-color: #e8f1ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 115, 255, 0.15);
+  }
+
+  /* Tombol Filled */
+  .navbar-mobile .nav-extra .btn-filled {
+    background-color: #d8e6ff;
+    border: 2px solid transparent;
+    color: #1a1a1a;
+  }
+
+  /* Hover efek filled */
+  .navbar-mobile .nav-extra .btn-filled:hover {
+    background-color: #bcd4ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 115, 255, 0.25);
+  }
+
+  .featured-kiri {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .featured-section .featured-main .featured-kiri h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+}
+
+.featured-section .featured-review {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  padding: 30px;
+  margin-top: 60px;
+  background-color: #fff9f0;
+}
+
+.featured-section .featured-review .review {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: left;
+  width: 300px;
+  border: 3px solid #000;
+}
+
+.featured-section .featured-review .review h3 {
+  text-align: center;
+  font-size: 28px;
+  line-height: 200%;
+  font-weight: 700;
+}
+
+.featured-section .featured-review .review i {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.featured-section .featured-review .review p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 150%;
+  margin: 0 20px 20px 20px;
+  text-align: center;
+}
