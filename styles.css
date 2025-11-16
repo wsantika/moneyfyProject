@@ -488,7 +488,6 @@ header {
 
 .featured-section .featured-third .content-why .detail-why i {
   vertical-align: middle;
-  
 }
 
 .featured-section .featured-third .content-why .detail-why h4 {
@@ -506,4 +505,51 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+
+/* AWAL BAGIAN FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-column {
+  margin: 10px;
+}
+
+footer .footer-column h4 {
+  font-size: 20px;
+  margin-bottom: 1.2rem;
+}
+
+footer .footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-column ul li {
+  margin: 5px 0;
+}
+
+footer .footer-column ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer .footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 0.9rem;
 }
