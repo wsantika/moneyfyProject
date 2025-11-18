@@ -1,21 +1,32 @@
 /* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
+/* ===== CSS VARIABLES ===== */
+:root {
+  --main-bg: #fff9f0;
+  --accent-blue: #d8e6ff;
+  --hover-blue: #bcd4ff;
+  --border-blue: #8fbaff;
+  --font-main: "Playfair Display", serif;
+  --font-secondary: "Lora", serif;
+  --font-color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-main);
   /* border: 2px solid red; */
 }
 
 body {
-  background-color: #fff9f0;
+  background-color: var(--main-bg);
 }
 
 header {
   width: 100%;
-  background-color: #fff9f0;
+  background-color: var(--main-bg);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
@@ -46,7 +57,7 @@ header {
 
 .navbar .nav-logo a {
   text-decoration: none;
-  color: #000;
+  color: var(--font-color);
 }
 
 .navbar .nav-menu {
@@ -68,9 +79,9 @@ header {
 
 .navbar .nav-menu ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--font-color);
   font-size: 1rem;
-  font-family: "Lora", serif;
+  font-family: var(--font-secondary);
   font-weight: 700;
   transition: all 0.4s;
 }
@@ -98,7 +109,7 @@ header {
 
 .navbar .nav-extra ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--font-color);
   font: 1rem;
 }
 
@@ -106,7 +117,7 @@ header {
 .navbar .nav-extra .btn {
   font-size: 1rem;
   font-weight: 700;
-  font-family: "Lora", serif;
+  font-family: var(--font-secondary);
   padding: 12px 30px;
   border-radius: 25px;
   cursor: pointer;
@@ -117,8 +128,8 @@ header {
 /* Tombol Outline */
 .navbar .nav-extra .btn-outline {
   background-color: transparent;
-  border: 2px solid #8fbaff;
-  color: #1a1a1a;
+  border: 2px solid var(--border-blue);
+  color: var(--font-color);
 }
 
 /* Hover efek outline */
@@ -130,14 +141,14 @@ header {
 
 /* Tombol Filled */
 .navbar .nav-extra .btn-filled {
-  background-color: #d8e6ff;
+  background-color: var(--accent-blue);
   border: 2px solid transparent;
-  color: #1a1a1a;
+  color: var(--font-color);
 }
 
 /* Hover efek filled */
 .navbar .nav-extra .btn-filled:hover {
-  background-color: #bcd4ff;
+  background-color: var(--hover-blue);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 115, 255, 0.25);
 }
@@ -211,7 +222,7 @@ header {
     text-decoration: none;
     color: #000;
     font-size: 1rem;
-    font-family: "Lora", serif;
+    font-family: var(--font-secondary);
     font-weight: 700;
     transition: all 0.4s;
   }
@@ -247,7 +258,7 @@ header {
   .navbar-mobile .nav-extra .btn {
     font-size: 1rem;
     font-weight: 700;
-    font-family: "Lora", serif;
+    font-family: var(--font-secondary);
     padding: 12px 30px;
     border-radius: 25px;
     cursor: pointer;
@@ -258,8 +269,8 @@ header {
   /* Tombol Outline */
   .navbar-mobile .nav-extra .btn-outline {
     background-color: transparent;
-    border: 2px solid #8fbaff;
-    color: #1a1a1a;
+    border: 2px solid var(--border-blue);
+    color: var(--font-color);
   }
 
   /* Hover efek outline */
@@ -271,14 +282,14 @@ header {
 
   /* Tombol Filled */
   .navbar-mobile .nav-extra .btn-filled {
-    background-color: #d8e6ff;
+    background-color: var(--accent-blue);
     border: 2px solid transparent;
-    color: #1a1a1a;
+    color: var(--font-color);
   }
 
   /* Hover efek filled */
   .navbar-mobile .nav-extra .btn-filled:hover {
-    background-color: #bcd4ff;
+    background-color: var(--hover-blue);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 115, 255, 0.25);
   }
@@ -337,7 +348,7 @@ header {
   margin-top: 20px;
   font-size: 1rem;
   font-weight: 700;
-  font-family: "Lora", serif;
+  font-family: var(--font-secondary);
   padding: 12px 30px;
   border-radius: 25px;
   cursor: pointer;
@@ -347,14 +358,14 @@ header {
 
 /* Tombol Filled */
 .featured-section .featured-main .featured-kiri .btn-main {
-  background-color: #d8e6ff;
+  background-color: var(--accent-blue);
   border: 2px solid transparent;
-  color: #1a1a1a;
+  color: var(--font-color);
 }
 
 /* Hover efek filled */
 .featured-section .featured-main .featured-kiri .btn-main:hover {
-  background-color: #bcd4ff;
+  background-color: var(--hover-blue);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 115, 255, 0.25);
 }
@@ -399,11 +410,11 @@ header {
   gap: 70px;
   padding: 30px;
   margin-top: 60px;
-  background-color: #fff9f0;
+  background-color: var(--main-bg);
 }
 
 .featured-section .featured-review .review {
-  background-color: white;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -442,10 +453,10 @@ header {
 }
 
 .featured-third h2 {
-  font-family: "Playfair Display", sans-serif;
+  font-family: var(--font-main);
   font-size: 32px;
   text-align: center;
-  color: #000;
+  color: var(--font-color);
   line-height: 120%;
 }
 
@@ -532,7 +543,7 @@ header {
   font-weight: 400;
   line-height: 150%;
 }
-/* AKHIR BAGIAN SECTION-WHY */
+/* ===== AKHIR BAGIAN SECTION-WHY ===== */
 
 .featured-section .featured-four {
   display: flex;
@@ -544,11 +555,26 @@ header {
   align-items: center;
 }
 
+@media (max-width: 992px) {
+  .featured-section .featured-four {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
 .featured-section .featured-four img {
   vertical-align: middle;
   border-style: none;
   width: 526px;
-  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .featured-section .featured-four img {
+    width: 336px;
+    height: 221px;
+  }
 }
 
 .featured-section .featured-four h4 {
@@ -573,13 +599,16 @@ header {
 
 .featured-section .featured-four ul li h4 {
   font-size: 24px;
+  display: inline-block;
+  margin-left: 16px;
+  margin-bottom: 0;
 }
 
 /* Style dasar tombol */
 .featured-section .featured-four .btn-bottom {
   font-size: 1rem;
   font-weight: 700;
-  font-family: "Lora", serif;
+  font-family: var(--font-secondary);
   padding: 12px 30px;
   border-radius: 25px;
   cursor: pointer;
@@ -589,14 +618,14 @@ header {
 
 /* Tombol Filled */
 .featured-section .featured-four .btn-bottom {
-  background-color: #d8e6ff;
+  background-color: var(--accent-blue);
   border: 2px solid transparent;
   color: #1a1a1a;
 }
 
 /* Hover efek filled */
 .featured-section .featured-four .btn-bottom:hover {
-  background-color: #bcd4ff;
+  background-color: var(--hover-blue);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 115, 255, 0.25);
 }
@@ -604,8 +633,8 @@ header {
 /* AWAL BAGIAN FOOTER */
 footer {
   margin-top: 50px;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   padding: 20px;
   text-align: left;
 }
