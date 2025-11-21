@@ -1,287 +1,268 @@
+<?php
+session_start();
+include "../security/config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
 
-    <!--Link ke CSS-->
-    <link rel="stylesheet" href="styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
 
-    <!--Link ke Remix Icon-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="navbar">
-          <div class="nav-logo">
-            <a href="home.html"><h1>MONEYFY</h1></a>
-          </div>
+  <!--Link ke CSS-->
+  <link rel="stylesheet" href="css/styles.css" />
 
-          <div class="nav-menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
+  <!--Link ke Remix Icon-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
 
-          <div class="nav-extra">
-            <ul>
-              <li>
-                <a href="#"><button class="btn btn-outline">Log in</button></a>
-              </li>
-              <li>
-                <a href="#"><button class="btn btn-filled">Register</button></a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <header>
+    <nav>
+      <div class="navbar">
+        <div class="nav-logo">
+          <a href="home.html">
+            <h1>MONEYFY</h1>
+          </a>
         </div>
 
-        <div class="navbar-mobile">
-          <div class="nav-logo">
-            <a href="#"><h1>MONEYFY</h1></a>
-          </div>
-
-          <div class="nav-menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="nav-extra">
-            <ul>
-              <li>
-                <a href="#"><button class="btn btn-outline">Log in</button></a>
-              </li>
-              <li>
-                <a href="#"><button class="btn btn-filled">Register</button></a>
-              </li>
-            </ul>
-          </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-      </nav>
-    </header>
 
-    <main>
-      <div class="featured-section">
-        <!--UNTUK MAIN-->
-        <section class="featured-main">
-          <div class="featured-kiri">
-            <h4>Finance Solutions For You</h4>
-            <h1>SMARTER FINANCE,<br />MADE SIMPLE</h1>
-            <p>
-              Accounting applications are here to help you manage all your
-              financial transactions efficiently and accurately. From now on,
-              you no longer need to feel overwhelmed by complex numbers and
-              financial reports.
-            </p>
-            <a href="#"><button class="btn btn-main">Get Started</button></a>
-          </div>
+        <div class="nav-extra">
+          <ul>
+            <li>
+              <a href="security\login.php"><button class="btn btn-outline">Log in</button></a>
+            </li>
+            <li>
+              <a href="security\register.php"><button class="btn btn-filled">Register</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="featured-kanan">
-            <img
-              src="media/img-media.JPG"
-              class="img-main"
-              alt="Featured Image"
-            />
-            <img
-              src="media/img-secondary.JPG"
-              class="img-secondary"
-              alt="Decorative Shape"
-            />
-            <img src="media/Ellipse.png" class="circle-bg" alt="circle-dec" />
-          </div>
-        </section>
-        <!--AKHIR MAIN-->
+      <div class="navbar-mobile">
+        <div class="nav-logo">
+          <a href="#">
+            <h1>MONEYFY</h1>
+          </a>
+        </div>
 
-        <!--UNTUK REVIEW-->
-        <section class="featured-review">
-          <div class="review">
-            <h3>100.000+</h3>
-            <p>Business people use my accounting to help their businesses</p>
-          </div>
-          <div class="review">
-            <h3>2.000.000+</h3>
-            <p>Invoice transactions are recorded and created in MONEYFY</p>
-          </div>
-          <div class="review">
-            <h3><i class="ri-star-line"></i>4.7</h3>
-            <p>App Store rating given by users for MONEYFY application</p>
-          </div>
-        </section>
-        <!--AKHIR REVIEW-->
+        <div class="nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
 
-        <!--AWAL SECTION-WHY-->
-        <section class="featured-third">
-          <h2>Why Choose MONEYFY?</h2>
-          <div class="content-why">
-            <img
-              id="why-img-1"
-              src="media/home_sectionwhy1.png"
-              alt="img-why1"
-            />
-            <div class="detail-why">
-              <div>
-                <div style="display: flex; align-items: flex-start; gap: 16px">
-                  <i class="ri-lock-2-line ri-2x"></i>
-                  <h4>Privacy is Maintened</h4>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem dicta nemo voluptatum ea quasi error sint labore
-                  sed suscipit impedit dignissimos deleniti ipsam, culpa eos
-                  debitis? Eos quidem suscipit magni.
-                </p>
-              </div>
-              <div>
-                <div
-                  style="
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 16px;
-                    margin-top: 30px;
-                  "
-                >
-                  <i class="ri-cloudy-line ri-2x"></i>
-                  <h4>Data save in Cloud System</h4>
-                </div>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nobis ut, quidem debitis saepe cum dicta veniam dignissimos
-                  reiciendis assumenda sapiente ipsam neque velit ipsa
-                  excepturi!
-                </p>
-              </div>
-              <div>
-                <div
-                  style="
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 16px;
-                    margin-top: 30px;
-                  "
-                >
-                  <i class="ri-smartphone-line ri-2x"></i>
-                  <h4>Access Anywhere</h4>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dolor ea numquam fugit saepe itaque officia.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="content-why">
-            <div class="detail-why">
-              <img
-                id="why-img-2"
-                src="media/home_sectionwhy2.png"
-                alt="img-why2"
-              />
-              <div>
-                <div style="display: flex; align-items: flex-start; gap: 16px">
-                  <i class="ri-thumb-up-line ri-2x"></i>
-                  <h4>User Convenience</h4>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem dicta nemo voluptatum ea quasi error sint labore
-                  sed suscipit impedit dignissimos deleniti ipsam, culpa eos
-                  debitis? Eos quidem suscipit magni.
-                </p>
-              </div>
-              <div>
-                <div
-                  style="
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 16px;
-                    margin-top: 30px;
-                  "
-                >
-                  <i class="ri-customer-service-line ri-2x"></i>
-                  <h4>Customer Service Support</h4>
-                </div>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nobis ut, quidem debitis saepe cum dicta veniam dignissimos
-                  reiciendis assumenda sapiente ipsam neque velit ipsa
-                  excepturi!
-                </p>
-              </div>
-            </div>
-            <img
-              id="why-img-3"
-              src="media/home_sectionwhy2.png"
-              alt="img-why2"
-            />
-          </div>
-        </section>
-        <!--AKHIR SECTION-WHY-->
+        <div class="nav-extra">
+          <ul>
+            <li>
+              <a href="#"><button class="btn btn-outline">Log in</button></a>
+            </li>
+            <li>
+              <a href="#"><button class="btn btn-filled">Register</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        <!--AWAL SECTION-FOUR-->
-        <section>
-          <div class="featured-four">
-            <img src="media/home_sectionend-four.png" alt="img-sec-four" />
+  <main>
+    <div class="featured-section">
+      <!--UNTUK MAIN-->
+      <section class="featured-main">
+        <div class="featured-kiri">
+          <h4>Finance Solutions For You</h4>
+          <h1>SMARTER FINANCE,<br />MADE SIMPLE</h1>
+          <p>
+            Accounting applications are here to help you manage all your
+            financial transactions efficiently and accurately. From now on,
+            you no longer need to feel overwhelmed by complex numbers and
+            financial reports.
+          </p>
+          <a href="#"><button class="btn btn-main">Get Started</button></a>
+        </div>
+
+        <div class="featured-kanan">
+          <img src="media/img-media.JPG" class="img-main" alt="Featured Image" />
+          <img src="media/img-secondary.JPG" class="img-secondary" alt="Decorative Shape" />
+          <img src="media/Ellipse.png" class="circle-bg" alt="circle-dec" />
+        </div>
+      </section>
+      <!--AKHIR MAIN-->
+
+      <!--UNTUK REVIEW-->
+      <section class="featured-review">
+        <div class="review">
+          <h3>100.000+</h3>
+          <p>Business people use my accounting to help their businesses</p>
+        </div>
+        <div class="review">
+          <h3>2.000.000+</h3>
+          <p>Invoice transactions are recorded and created in MONEYFY</p>
+        </div>
+        <div class="review">
+          <h3><i class="ri-star-line"></i>4.7</h3>
+          <p>App Store rating given by users for MONEYFY application</p>
+        </div>
+      </section>
+      <!--AKHIR REVIEW-->
+
+      <!--AWAL SECTION-WHY-->
+      <section class="featured-third">
+        <h2>Why Choose MONEYFY?</h2>
+        <div class="content-why">
+          <img id="why-img-1" src="media/home_sectionwhy1.png" alt="img-why1" />
+          <div class="detail-why">
             <div>
-              <h4>Easily track your finances with MONEYFY. Start now!</h4>
-              <ul>
-                <li>
-                  <i class="ri-checkbox-circle-line ri-2x"></i>
-                  <h4>Free</h4>
-                </li>
-                <li>
-                  <i class="ri-checkbox-circle-line ri-2x"></i>
-                  <h4>Easy</h4>
-                </li>
-                <li>
-                  <i class="ri-checkbox-circle-line ri-2x"></i>
-                  <h4>Secure</h4>
-                </li>
-              </ul>
-              <a href="#"
-                ><button class="btn btn-bottom">Register Now!</button></a
-              >
+              <div style="display: flex; align-items: flex-start; gap: 16px">
+                <i class="ri-lock-2-line ri-2x"></i>
+                <h4>Privacy is Maintened</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem dicta nemo voluptatum ea quasi error sint labore
+                sed suscipit impedit dignissimos deleniti ipsam, culpa eos
+                debitis? Eos quidem suscipit magni.
+              </p>
+            </div>
+            <div>
+              <div style="
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 16px;
+                    margin-top: 30px;
+                  ">
+                <i class="ri-cloudy-line ri-2x"></i>
+                <h4>Data save in Cloud System</h4>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nobis ut, quidem debitis saepe cum dicta veniam dignissimos
+                reiciendis assumenda sapiente ipsam neque velit ipsa
+                excepturi!
+              </p>
+            </div>
+            <div>
+              <div style="
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 16px;
+                    margin-top: 30px;
+                  ">
+                <i class="ri-smartphone-line ri-2x"></i>
+                <h4>Access Anywhere</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolor ea numquam fugit saepe itaque officia.
+              </p>
             </div>
           </div>
-        </section>
-        <!--AKHIR SECTION-FOUR-->
-      </div>
-    </main>
+        </div>
+        <div class="content-why">
+          <div class="detail-why">
+            <img id="why-img-2" src="media/home_sectionwhy2.png" alt="img-why2" />
+            <div>
+              <div style="display: flex; align-items: flex-start; gap: 16px">
+                <i class="ri-thumb-up-line ri-2x"></i>
+                <h4>User Convenience</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem dicta nemo voluptatum ea quasi error sint labore
+                sed suscipit impedit dignissimos deleniti ipsam, culpa eos
+                debitis? Eos quidem suscipit magni.
+              </p>
+            </div>
+            <div>
+              <div style="
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 16px;
+                    margin-top: 30px;
+                  ">
+                <i class="ri-customer-service-line ri-2x"></i>
+                <h4>Customer Service Support</h4>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nobis ut, quidem debitis saepe cum dicta veniam dignissimos
+                reiciendis assumenda sapiente ipsam neque velit ipsa
+                excepturi!
+              </p>
+            </div>
+          </div>
+          <img id="why-img-3" src="media/home_sectionwhy2.png" alt="img-why2" />
+        </div>
+      </section>
+      <!--AKHIR SECTION-WHY-->
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-column">
-          <h4>CONTACT US</h4>
-          <ul>
-            <li>Phone: 123-123-123</li>
-            <li><a href="#">moneyfy@gmail.com</a></li>
-            <li>Jl. Raya Kalcer No.123</li>
-          </ul>
+      <!--AWAL SECTION-FOUR-->
+      <section>
+        <div class="featured-four">
+          <img src="media/home_sectionend-four.png" alt="img-sec-four" />
+          <div>
+            <h4>Easily track your finances with MONEYFY. Start now!</h4>
+            <ul>
+              <li>
+                <i class="ri-checkbox-circle-line ri-2x"></i>
+                <h4>Free</h4>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-line ri-2x"></i>
+                <h4>Easy</h4>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-line ri-2x"></i>
+                <h4>Secure</h4>
+              </li>
+            </ul>
+            <a href="#"><button class="btn btn-bottom">Register Now!</button></a>
+          </div>
         </div>
-        <div class="footer-column">
-          <h4>ABOUT US</h4>
-          <ul>
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Our Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>LEGAL</h4>
-          <ul>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
+      </section>
+      <!--AKHIR SECTION-FOUR-->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>CONTACT US</h4>
+        <ul>
+          <li>Phone: 123-123-123</li>
+          <li><a href="#">moneyfy@gmail.com</a></li>
+          <li>Jl. Raya Kalcer No.123</li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div class="footer-column">
+        <h4>ABOUT US</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>LEGAL</h4>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

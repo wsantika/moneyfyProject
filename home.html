@@ -6,13 +6,16 @@
     <title>Home | MONEYFY</title>
 
     <!--Link ke CSS-->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!--Link ke Remix Icon-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!--Link ke AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -73,7 +76,7 @@
       <div class="featured-section">
         <!--UNTUK MAIN-->
         <section class="featured-main">
-          <div class="featured-kiri">
+          <div class="featured-kiri" data-aos="fade-right">
             <h4>Finance Solutions For You</h4>
             <h1>SMARTER FINANCE,<br />MADE SIMPLE</h1>
             <p>
@@ -85,7 +88,7 @@
             <a href="#"><button class="btn btn-main">Get Started</button></a>
           </div>
 
-          <div class="featured-kanan">
+          <div class="featured-kanan" data-aos="fade-left">
             <img
               src="media/img-media.JPG"
               class="img-main"
@@ -283,5 +286,11 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false, //false/true
+      });
+    </script>
   </body>
 </html>
